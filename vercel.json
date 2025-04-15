@@ -10,25 +10,22 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
-      },
-      "continue": true
+      "source": "/static/(.*)",
+      "destination": "/web-build/static/$1"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/web-build/favicon.ico"
+      "source": "/favicon.ico",
+      "destination": "/web-build/favicon.ico"
     },
     {
-      "src": "/manifest.json",
-      "dest": "/web-build/manifest.json"
+      "source": "/manifest.json",
+      "destination": "/web-build/manifest.json"
     },
     {
-      "src": "/(.*)",
-      "dest": "/web-build/index.html"
+      "source": "/(.*)",
+      "destination": "/web-build/index.html"
     }
   ],
   "headers": [
