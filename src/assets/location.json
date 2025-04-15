@@ -1,0 +1,13 @@
+{
+    "location": {
+        "appartment 4 rooms":{
+        "address": "Sofia Center, ul. Tsar Samuil 21"
+        },
+        "appartment 3 rooms":{
+            "address": "Sofia Center, ul. Tsar Simeon 21"
+        },
+        "appartment 2 rooms":{
+            "address": "Sofia Center, ul. Slavyanska 18-24"
+        }
+    }
+} 
